@@ -1,16 +1,17 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// 'Health-Coin' token contract
+// 'hcoin' token contract
 //
-// Deployed to : 0xd2E2fA7904d28d162E4d00aa1837C6597622f40A
-// Symbol      : HTX
-// Name        : Health-Coin
+// Deployed to : 0xfb6AA64BdCc47032ee9B122Fb0BC061D00A0c756
+// Symbol      : HTC
+// Name        : HCOIN
 // Total supply: 1000
 // Decimals    : 8
 //
+// Enjoy.
 //
-// AnnonSkull
+// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
@@ -98,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract HealthCoin is ERC20Interface, Owned, SafeMath {
+contract hcoin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,12 +113,12 @@ contract HealthCoin is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "HTX";
-        name = "Health-Coin";
+        symbol = "htc";
+        name = "hcoin";
         decimals = 8;
         _totalSupply = 100000000000;
-        balances[0xd2E2fA7904d28d162E4d00aa1837C6597622f40A] = _totalSupply;
-        emit Transfer(address(0), 0xd2E2fA7904d28d162E4d00aa1837C6597622f40A, _totalSupply);
+        balances[0xfb6AA64BdCc47032ee9B122Fb0BC061D00A0c756] = _totalSupply;
+        emit Transfer(address(0), 0xfb6AA64BdCc47032ee9B122Fb0BC061D00A0c756, _totalSupply);
     }
 
 
